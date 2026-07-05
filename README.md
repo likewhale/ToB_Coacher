@@ -1,8 +1,8 @@
-# tob-helper — ToB 求职教练
+# ToB_Coacher — ToB 求职教练
 
 > 不是给答案，是帮求职者自己看见答案。
 
-覆盖 ToB 销售求职**全生命周期**的 Hermes Agent 技能。七阶段递进式辅导框架，每个阶段可独立使用，也可串联走完整流程。
+覆盖 ToB 销售求职**全生命周期**的 AI Agent 技能（Skill）。七阶段递进式辅导框架，每个阶段可独立使用，也可串联走完整流程。
 
 ---
 
@@ -58,6 +58,16 @@
 
 ---
 
+## 在 AI Agent 中使用
+
+让你的 AI 加载这个 GitHub 仓库的 skill：
+
+> 「加载这个 skill：https://github.com/likewhale/ToB_Coacher」
+
+或把 `SKILL.md` 放到 AI 的 skills 目录下，然后直接开始求职对话即可自动触发。
+
+---
+
 ## 特色模块
 
 ### 3E. 跨行/零基础小白优势挖掘
@@ -72,40 +82,6 @@
 3. **深度挖掘 5 层链** — 事件→动作→困难→影响→自我翻译
 4. **引导输出重构卡** — 给框架不给内容，让用户自己填充
 5. **简历逐行提问** — 代替直接改写
-
----
-
-## 文件结构
-
-```
-tob-helper/
-├── SKILL.md      # 技能本体（946行）
-├── README.md     # 本文件
-└── .gitignore
-```
-
----
-
-## 部署方式
-
-### Hermes Agent
-
-自动加载：技能位于 `~/AppData/Local/hermes/skills/productivity/tob-helper/`，Hermes 在对话中检测触发词后自动加载。
-
-### RedSkill / 小红书 SkillHub
-
-通过 `skillhub-upload` CLI 上传至小红书云端：
-
-```bash
-skillhub-upload login --agent
-skillhub-upload publish <path-to-skill> --agent --source original --tag "职场办公"
-```
-
----
-
-## 配套技能
-
-- **`tob-extractor`** — 提取销售岗位信息，配合推荐投递方向
 
 ---
 
