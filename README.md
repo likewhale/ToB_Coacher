@@ -62,9 +62,8 @@
 
 让你的 AI 加载这个 GitHub 仓库的 skill：
 
-> 「加载这个 skill：https://github.com/likewhale/ToB_Coacher」
-
-或把 `SKILL.md` 放到 AI 的 skills 目录下，然后直接开始求职对话即可自动触发。
+「加载这个 skill：https://github.com/likewhale/ToB_Coacher」
+或把 SKILL.md 放到 AI 的 skills 目录下，直接开始求职对话即可触发。
 
 ---
 
